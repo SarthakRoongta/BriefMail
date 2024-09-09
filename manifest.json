@@ -1,0 +1,21 @@
+
+{
+  "manifest_version": 3,
+  "name": "Email Summarizer",
+  "description": "Summarizes long email threads using NLP to highlight key points and tasks.",
+  "version": "1.0",
+  "permissions": ["activeTab", "storage", "scripting"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://mail.google.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}

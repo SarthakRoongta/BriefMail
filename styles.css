@@ -1,0 +1,17 @@
+
+body {
+  font-family: Arial, sans-serif;
+  padding: 10px;
+}
+
+#summaryOutput {
+  margin-top: 10px;
+}
+
+button {
+  padding: 8px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
