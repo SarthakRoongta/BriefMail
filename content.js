@@ -1,6 +1,5 @@
 
 function extractEmailContent() {
-  // Simulated logic for extracting the email content. Adjust selectors based on Gmail's structure.
   let emailBody = document.querySelector('.ii.gt').innerText || "Email content not found.";
   return emailBody;
 }
